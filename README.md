@@ -1,8 +1,8 @@
 # DQN 알고리즘과 Unity 3D Environment 연동 프로젝트
 
 ## 📚 **프로젝트 개요**
-이 프로젝트는 **DQN 알고리즘**을 활용하여 **Unity 3D Environment**와 **Python** 간의 통신을 통해 강화학습을 구현한 프로젝트입니다.
-Python과 Unity간의 TCP 통신을 이용해 구현되었습니다.
+이 프로젝트는 **DQN 알고리즘**을 활용하여 **Unity 3D Environment**와 **Python** 간의 통신을 통해 강화학습을 구현한 프로젝트
+Python과 Unity간의 TCP 통신을 이용해 구현
 
 ## 🔧 **개발 환경**
 - **Unity 버전**: 2021.3.45f1
@@ -13,7 +13,7 @@ Python과 Unity간의 TCP 통신을 이용해 구현되었습니다.
 ---
 
 ## 🎯 **프로젝트 목적**
-- Unity와 Python의 통신을 통해 **강화학습의 구현 방법을 조사**하고, 이를 활용해 DQN 알고리즘을 적용하여 에이전트의 행동 학습을 실험합니다.
+- Unity와 Python의 통신을 통해 **강화학습의 구현 방법을 조사**하고, 이를 활용해 DQN 알고리즘을 적용하여 에이전트의 행동 학습 실험
 
 ---
 
@@ -84,15 +84,15 @@ Python과 Unity간의 TCP 통신을 이용해 구현되었습니다.
 
 ### 🔍 **DQN 모델 수식 분석**
 - **벨만 최적 방정식**을 사용해 Q값을 도출
-- 수식: \( Q(s, a) = r + \gamma \max_{a'} Q(s', a') \)
-  - \( r \) : 현재 상태의 즉시 보상
-  - \( \gamma \) : 감가율, 미래의 보상을 신뢰하는 파라미터
-  - \( s' \) : 다음 상태
-  - \( a' \) : 가능한 행동 중 최대 Q값을 선택
+- 수식: ![\( Q(s, a) = r + \gamma \max_{a'} Q(s', a') \)](https://quicklatex.com/cache3/1e/ql_aab8f59067facd8b9d7352ff4d14d31e_l3.png)
+  - ![\( r \)](https://quicklatex.com/cache3/db/ql_4c14022d4113954dbdbbc248d9c654db_l3.png) : 현재 상태의 즉시 보상
+  - ![\( \gamma \)](https://quicklatex.com/cache3/1d/ql_fd85724f81e636c218dff9767eb39a1d_l3.png) : 감가율, 미래의 보상을 신뢰하는 파라미터
+  - ![\( s' \)](https://quicklatex.com/cache3/0a/ql_db625e306e6018b8ed704b319a38d50a_l3.png) : 다음 상태
+  - ![\( a' \)](https://quicklatex.com/cache3/4b/ql_7cf6184a3ca0dfb945a011ca8383c24b_l3.png) : 가능한 행동 중 최대 Q값을 선택
 
 ### 📄 **코드 분석**
 - 기존 벨만 최적 방정식에 **에피소드 상태** 추가
-- 에피소드가 끝나면 `dones=1`로 설정하여 보상만 반영
+- 에피소드가 끝나면 `dones=1`로 설정하여 보상만 반영하도록 함
 - **One-Hot Encoding**으로 현재 Agent가 취한 행동을 변환
 - Q값과 Target Q값의 **MSE 오차**를 계산하여 학습
 
@@ -127,7 +127,7 @@ Python과 Unity간의 TCP 통신을 이용해 구현되었습니다.
 ---
 
 ## ✨ **결론**
-- **DQN 알고리즘과 Unity 3D 환경 연동**을 통해 강화학습을 성공적으로 구현하였으며, 기존 Reward 정책의 한계를 극복하기 위해 **행동 페널티**를 추가하여 성능을 개선했습니다.
+- **DQN 알고리즘과 Unity 3D 환경 연동**을 통해 강화학습을 성공적으로 구현하였으며, 기존 Reward 정책의 한계를 극복하기 위해 **행동 페널티**를 추가하여 성능을 개선
 
 ---
 
