@@ -27,12 +27,12 @@ Python과 Unity간의 TCP 통신을 이용해 구현
 - **Reward**: 행동의 결과로 주어지는 보상 (보상이 클수록 해당 행동을 더 선호하도록 학습)
 
 ### 🧠 **강화학습의 학습 원리**
-- ** 탐험(Exploration)과 이용(Exploitation) **을 통해 최적의 행동을 학습
+- **탐험(Exploration)과 이용(Exploitation)** 을 통해 최적의 행동을 학습
 - 탐험: 새로운 행동을 시도하여 보상을 확인
 - 이용: 현재까지 학습된 지식을 바탕으로 최적의 행동을 선택
 
 ### 🔥 **DQN 알고리즘**
-- 논문 **"Playing Atari with Deep Reinforcement Learning"**에서 소개된 알고리즘
+- 논문 **"Playing Atari with Deep Reinforcement Learning"** 에서 소개된 알고리즘
 - **Q-Learning의 신경망 근사화**를 통해 State-Action 값을 신경망으로 근사화
 - **Replay Buffer**: 이전에 수행한 행동을 저장하여 샘플링, Agent의 편향된 학습을 방지
 - **Target Network**: 일정 주기마다 학습 중인 네트워크의 가중치를 복사하여 Q값 업데이트의 안정성을 높임
