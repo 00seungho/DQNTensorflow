@@ -2,6 +2,7 @@
 
 ## 📚 **프로젝트 개요**
 **DQN 알고리즘**을 활용하여 **Unity 3D Environment**와 **Python** 간의 통신을 통해 강화학습을 구현한 프로젝트
+
 Python과 Unity간의 TCP 통신을 이용해 구현
 
 ## 🔧 **개발 환경**
