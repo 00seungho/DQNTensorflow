@@ -1,4 +1,4 @@
-# DQN 알고리즘과 Unity 3D Environment 연동 프로젝트
+# Unity 3D Environment를 활용한 DQN 알고리즘 구현 및 연구
 
 ## 📚 **프로젝트 개요**
 **DQN 알고리즘**을 활용하여 **Unity 3D Environment**와 **Python** 간의 통신을 통해 강화학습을 구현한 프로젝트
